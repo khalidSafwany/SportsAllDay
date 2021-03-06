@@ -6,7 +6,7 @@ target 'SportsAllDay' do
   use_frameworks!
 pod 'Alamofire', '~> 5.2'
 pod 'SDWebImage', '~> 5.0'
-pod "youtube-ios-player-helper"
+
 
   # Pods for SportsAllDay
 
@@ -15,14 +15,14 @@ pod "youtube-ios-player-helper"
     # Pods for testing
 pod 'Alamofire', '~> 5.2'
 pod 'SDWebImage', '~> 5.0'
-pod "youtube-ios-player-helper"
+
   end
 
   target 'SportsAllDayUITests' do
     # Pods for testing
 pod 'Alamofire', '~> 5.2'
 pod 'SDWebImage', '~> 5.0'
-pod "youtube-ios-player-helper"
+
   end
 
 end
