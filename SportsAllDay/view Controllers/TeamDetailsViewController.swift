@@ -16,6 +16,8 @@ class TeamDetailsViewController: UIViewController {
     @IBOutlet weak var teamNameLabel: UILabel!
     @IBOutlet weak var teamYearLabel: UILabel!
     
+    
+    @IBOutlet weak var descriptionTextView: UITextView!
     var viewedTeam:Team?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +26,15 @@ class TeamDetailsViewController: UIViewController {
         teamNameLabel.text = viewedTeam?.strTeam
         teamYearLabel.text = viewedTeam?.intFormedYear
         stadiumNameLabel.text = viewedTeam?.strStadium
-
+        descriptionTextView.text = viewedTeam?.strDescriptionEN
+        descriptionTextView.isEditable = false
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func backButtonAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func teamSitebtnAction(_ sender: Any) {
         
         var urlString = viewedTeam?.strWebsite
